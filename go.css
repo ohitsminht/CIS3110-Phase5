@@ -62,10 +62,10 @@ height: auto;
 }
 
 
-.buttons{
+/*.buttons{
 	display: block;
     margin: 0 auto;
-}
+}*/
 
 .heart{
   width:30px;
@@ -179,7 +179,7 @@ height: auto;
 }
 
 /* Style the buttons */
-.btn {
+.button {
     border: none;
     outline: none;
     padding: 10px 16px;
@@ -188,15 +188,19 @@ height: auto;
     font-size: 18px;
 }
 
-.btn:hover {
+.button:hover {
     background-color: #ddd;
 }
 
-.btn.active {
+.button.active {
     background-color: #666;
     color: white;
 }
 
 * {
     box-sizing: border-box;
+}
+
+.grey {
+  color: #808080;
 }
