@@ -5,7 +5,7 @@ height: auto;
 .imgDiv{
   width:30%
   height:300px;
-  padding:5px; 
+  padding:5px;
 }
 
 .title{
@@ -31,19 +31,19 @@ height: auto;
 	transition:.3s;
 	margin:4px;
 }
-  
+
 .imgDiv img{
 	width:100%;
 	height:100%;
 	transition:.3s;
 	border-radius:4px;
 }
-  
+
 .imgDiv:hover img{
 	filter:blur(2px) brightness(60%);
 	box-shadow:0 0 16px black;
 }
-   
+
 .imgDiv h1{
    position:absolute;
    z-index:1;
@@ -55,8 +55,8 @@ height: auto;
    transition:.3s;
    font-size: 25px;
 }
-  
-  
+
+
 .imgDiv:hover h1{
    opacity:1;
 }
@@ -112,7 +112,7 @@ height: auto;
 }
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px; 
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -203,4 +203,13 @@ height: auto;
 
 .grey {
   color: #808080;
+}
+
+.jumbotron {
+      background-color: #f2f2f2; /* white */
+      color: #666666;
+  }
+
+.jumbotron h1 {
+  font-size: 150px;
 }

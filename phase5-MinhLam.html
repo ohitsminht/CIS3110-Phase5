@@ -15,9 +15,9 @@
   <body onload="checkCookie()">
 
     This is a test.
- 
+
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <a class="navbar-brand">🏎️💨</a>
+    <a class="navbar-brand">RACECAR</a>
 
     <div class="grid layout">
       <button class="btn" onclick="one()">1</button>
@@ -37,13 +37,28 @@
     </div>
   </nav>
   <br>
+
+  <!-- Continer with jumpbotron -->
+  <div class="jumbotron text-center">
+    <h1>🏎️💨</h1>
+    <p>Here you'll find how to do different techniques for Snowboarding</p>
+  </div>
+
   <div class = "row" id = "grid"></div>
+
+  <!-- Foooter -->
+  <footer class="footer">
+     <div class="container">
+       <span class="text-muted">Copyright Inc. Cars</span>
+     </div>
+   </footer>
+   
    <script src="https://code.jquery.com/jquery-1.12.4.js"> </script>
    <script>
    var images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]; //your urls
    var caption = ["Irwin Wipatasillapin", "Brandon Nguyen", "Brandon Huynh", "Alex Vu", "Tommy Souvannavong", "Minh Lam"];
-   var desc = ["2012 Subaru WRX built by Irwin in 2016. Irwin was one of the first to prove that you can be both low and fast. This car served as an    inspiration to  its very end.", 
-   "Brandon N. showed off his passion with his Varis kit imported from Japan along with custom RSV Forged three piece wheels. The suspension was managed by AirLift Performance 3P air bags. This car made its debut at Spocom Anaheim 2016.", 
+   var desc = ["2012 Subaru WRX built by Irwin in 2016. Irwin was one of the first to prove that you can be both low and fast. This car served as an    inspiration to  its very end.",
+   "Brandon N. showed off his passion with his Varis kit imported from Japan along with custom RSV Forged three piece wheels. The suspension was managed by AirLift Performance 3P air bags. This car made its debut at Spocom Anaheim 2016.",
    "This BRZ built by Brandon H. is the epitamy of builting a car how you want. Inside, you would find a Status Racing bucket seat paired with Takata harness as well as an authentic Vertex steering wheel. With a custom exhaust and unequal length header, Brandon's BRZ is unmissable.",
    "Alex knew what he wanted when he built his car, which was both style and comfort. Some of the best aspects of this car are the little details such as the duckbil trunk lid. The stance and fitment perfection were both dialed in by Deity Motorsports.",
    "Tommy is a veteran of the car scene and with that pays meticulous attention to the details when he builds his cars. PUREVIP is the best way to describe his car with a full laminate flooring interior and center console ice chest emphasizing the luxurousness of this car. All the attention to detail Tommy put in won him Best in Show Euro at Spocom 2017.",
@@ -69,17 +84,17 @@
    {
       console.log("Image shown is " + images[i]);
       url = "https://s3-us-west-2.amazonaws.com/fall2018cis3110/Phase3/" + images[i];
-      urlOfDetailPage = "detailPage.html?" + "img=" + url + "&" + "caption=" + caption[i] + "&" + "desc=" + desc[i]; 
-   
+      urlOfDetailPage = "detailPage.html?" + "img=" + url + "&" + "caption=" + caption[i] + "&" + "desc=" + desc[i];
+
       var grid = document.getElementById("grid");
       var column = document.createElement("div"); //make a div
-      column.setAttribute("class", "border border-danger column"); 
+      column.setAttribute("class", "border border-danger column");
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("class", "imgDiv shadow p-3 mb-5 bg-white rounded");
 
       var showCaption = caption[i];
       var node = document.createTextNode(showCaption);
-      
+
       var hCaption = document.createElement("h1");
       hCaption.setAttribute("class", "caption")
       hCaption.appendChild(node);
@@ -90,7 +105,7 @@
       imgInDiv.setAttribute("alt", "Responsive image");
       imgInDiv.setAttribute("id", "img" + i);
       imgInDiv.setAttribute("src", url); //src to url, above, determined by for i
-   
+
       var link = document.createElement("a");
       link.setAttribute("href", urlOfDetailPage); // so you'll navigate to the url
       link.setAttribute("id", "a" + i);
@@ -116,9 +131,9 @@
       column.appendChild(favButton);
       column.appendChild(unfavButton);
       grid.appendChild(column);
-   
-      
-      //document.body.appendChild(column);//then appd to body, document.body.appendChild  
+
+
+      //document.body.appendChild(column);//then appd to body, document.body.appendChild
    }
 
    $(document).ready(function(){
@@ -321,7 +336,7 @@
                var urlOfDetailPageFav = url5 + "&fav=on";
                $('#a5').attr("href", urlOfDetailPageFav);
             }
-         } 
+         }
       }
 
       // Get the elements with class="column"
@@ -364,7 +379,7 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-      
+
    </script>
 
 
