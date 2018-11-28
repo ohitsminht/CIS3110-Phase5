@@ -13,6 +13,8 @@
     <title>¯\_(ツ)_/¯</title>
   </head>
   <body onload="checkCookie()">
+
+    This is a test.
  
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <a class="navbar-brand">🏎️💨</a>
@@ -71,7 +73,7 @@
    
       var grid = document.getElementById("grid");
       var column = document.createElement("div"); //make a div
-      column.setAttribute("class", "column"); 
+      column.setAttribute("class", "border border-danger column"); 
       var imgDiv = document.createElement("div");
       imgDiv.setAttribute("class", "imgDiv shadow p-3 mb-5 bg-white rounded");
 
@@ -84,7 +86,8 @@
       imgDiv.appendChild(hCaption);
 
       var imgInDiv = document.createElement("img");
-      imgInDiv.setAttribute("class", "pctImg"); //fit to div
+      imgInDiv.setAttribute("class","img-fluid");
+      imgInDiv.setAttribute("alt", "Responsive image");
       imgInDiv.setAttribute("id", "img" + i);
       imgInDiv.setAttribute("src", url); //src to url, above, determined by for i
    
@@ -96,14 +99,14 @@
 
       var favButton = document.createElement("button");
       favButton.setAttribute("type", "button");
-      favButton.setAttribute("class", "buttons");
+      favButton.setAttribute("class", "btn btn-danger btn-xs btn-block");
       favButton.setAttribute("id","btnFav" + i);
       var favNode = document.createTextNode("Favorite");
       favButton.appendChild(favNode);
 
       var unfavButton = document.createElement("button");
       unfavButton.setAttribute("type", "button");
-      unfavButton.setAttribute("class", "buttons");
+      unfavButton.setAttribute("class", "btn btn-danger btn-xs btn-block");
       unfavButton.setAttribute("id","btnUnfav" + i);
       var unfavNode = document.createTextNode("Unfavorite");
       unfavButton.appendChild(unfavNode);
