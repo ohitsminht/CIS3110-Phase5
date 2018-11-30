@@ -27,7 +27,16 @@
       <button class="btn" onclick="two()">2</button>
       <button class="btn" onclick="three()">3</button>
     </div>
-
+	  
+	<!--This div by James Kennedy-->
+	<div class="btn-group ml-auto">
+		<p>The current date and time are: <span id="datetime">11/28/2018, 10:34:35 PM</span></p>
+		<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = dt.toLocaleString();
+		</script>
+	</div>
+	  
     <div class="btn-group ml-auto">
       <button type="button" class="btn btn-black dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Friends
