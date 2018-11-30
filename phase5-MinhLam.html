@@ -413,7 +413,14 @@ for (var i = 0; i < btns.length; i++) {
 	    
     //enables alerts
     $('.alert').alert()
-	  
+	    
+    //enable alerts on click
+    $(document).ready(function(){
+    $('button').click(function(){
+    $('.alert').show()
+    }) 
+	});
+	    
     </script>
 
 
